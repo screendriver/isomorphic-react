@@ -16,8 +16,8 @@ const Root = ({ store }: { store: Store<void> }) => (
 );
 
 const store = createStore(() => {});
-
+console.log('hallooott---')
 render(
   <Root store={store} />,
-  document.getElementById('main')
+  document.getElementById('root')
 );

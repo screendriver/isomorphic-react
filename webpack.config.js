@@ -19,6 +19,10 @@ module.exports = {
     }]
   },
   devServer: {
+    inline: true,
     historyApiFallback: true,
-  }
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true
+  },
+  devtool: 'inline-source-map'
 }
